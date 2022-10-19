@@ -8,7 +8,7 @@ import sys
 
 # detect the current version
 with open('glicko2.py') as f:
-    version = re.search(r'__version__\s*=\s*\'(.+?)\'', f.read()).group(1)
+    version = re.search(r'__version__\s*=\s*\'(.+?)\'', f.read())[1]
 assert version
 
 
